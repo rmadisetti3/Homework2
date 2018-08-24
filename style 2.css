@@ -1,0 +1,47 @@
+nav {
+    background-color: black;
+    color: lightgrey;
+    padding: 30px;
+}
+.title1 {
+    font-size: 25px;
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+}
+.title2 {
+    font-size: 25px;
+    font-family: "Sonsie One", Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: grid;
+    height: 100%;
+    font-family: "EB Garamond", Arial, Helvetica, sans-serif;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+.box {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+p {
+    margin: 10px;
+}
+
+img {
+    height: 250px;
+    width: 400px;
+    border-top: solid 1px;
+}
+
+@media only screen and (min-width: 500px) {
+    main {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        border: solid 100px;
+    }
+    img {
+        height: 200px;
+        width: 295px;
+        border: solid;
+    }
+}
